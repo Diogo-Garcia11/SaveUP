@@ -9,7 +9,7 @@ services:
     container_name: laravel_app
     working_dir: /var/www/html
     volumes:
-      - ./app:/var/www/html
+      - .:/var/www/html
     ports:
       - "8000:80"
     environment:
