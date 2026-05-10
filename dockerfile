@@ -1,26 +1,36 @@
-FROM php:8.5.5-apache
-RUN apt-get update && apt-get install -y \
-    git \
-    unzip \
-    zip \
-    libpng-dev \
-    libicu-dev \
-    libonig-dev \
-    libxml2-dev \
-  && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd intl \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/*
-
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+FROM php:8.3.27
 
 WORKDIR /var/www/html
 
-COPY composer.json composer.lock /var/www/html/
+
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    unzip \
+    libpq-dev \
+    libonig-dev \
+    libssl-dev \
+    libxml2-dev \
+    libcurl4-openssl-dev \
+    libicu-dev \
+    libzip-dev \
+    && docker-php-ext-install -j$(nproc) \
+    pdo_mysql \
+    intl \
+    zip \
+    bcmath \
+    soap \
+    && apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+RUN php -m | grep mbstring
+
+COPY . /var/www/html
+
 RUN composer install --no-dev --optimize-autoloader
 
-RUN chown -R www-data:www-data /var/www/html
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
 
-EXPOSE 80
-
-CMD ["apache2-foreground"]
-
+EXPOSE 8000
