@@ -29,10 +29,8 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: brecho
-      MYSQL_USER: brecho
-      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: 1234
     networks:
       - application
     container_name: mysql_db
