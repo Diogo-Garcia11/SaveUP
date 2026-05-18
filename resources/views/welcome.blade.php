@@ -7,21 +7,21 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
         <script src="https://cdn.tailwindcss.com"></script>
 
         <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Montserrat"', 'sans-serif'],
-                        vintage: ['"Playfair Display"', 'serif'],
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"Montserrat"', 'sans-serif'],
+                            vintage: ['"Playfair Display"', 'serif'],
+                        }
                     }
                 }
             }
-        }
         </script>
 
         <script>
@@ -88,7 +88,7 @@
                     <div class="inline-flex items-center gap-1 bg-[#f7d3b7] text-[#c26730] text-xs font-medium px-3 py-1.5 rounded-full mb-6">
                         ✨ Moda Sustentável
                     </div>
-                    <h1 class="text-6xl font-normal tracking-tight text-[#1a1a1a] leading-tight mb-6">
+                    <h1 class="font-vintage text-6xl font-normal tracking-tight text-[#1a1a1a] leading-tight mb-6">
                         Descubra achados <br> vintage únicos
                     </h1>
                     <p class="text-gray-600 text-lg mb-8 max-w-md">
@@ -111,7 +111,7 @@
         <section id="sobre" class="w-full bg-white py-20 px-16">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl font-normal text-[#1a1a1a] mb-3">Por que comprar com a gente?</h2>
+                    <h2 class="font-vintage text-4xl font-normal text-[#1a1a1a] mb-3">Por que comprar com a gente?</h2>
                     <p class="text-gray-500 text-base">Peças de qualidade com preço acessível</p>
                 </div>
 
@@ -153,7 +153,7 @@
         <section class="w-full bg-[#f5f5f7] py-20 px-16">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl font-normal text-[#1a1a1a] mb-3">Últimas chegadas</h2>
+                    <h2 class="font-vintage text-4xl font-normal text-[#1a1a1a] mb-3">Últimas chegadas</h2>
                     <p class="text-[#f28e52] text-base">Novas descobertas adicionadas semanalmente</p>
                 </div>
 
@@ -180,7 +180,7 @@
         <!-- Visit Our Store -->
         <section id="contato" class="w-full bg-[#fce3cf] py-24 px-16">
             <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
-                <h2 class="text-4xl font-normal text-[#1a1a1a] mb-4">Visite nossa loja hoje!</h2>
+                <h2 class="font-vintage text-4xl font-normal text-[#1a1a1a] mb-4">Visite nossa loja hoje!</h2>
                 <p class="text-gray-600 text-base mb-8">Novos itens chegam diariamente. Venha ver que achados esperam por você!</p>
                 <a href="#localizacao" onclick="destacarLocalizacao()" class="bg-[#f28e52] text-white px-10 py-3 rounded-full font-medium hover:bg-[#e07d43] transition shadow-sm">Como chegar</a>
             </div>
