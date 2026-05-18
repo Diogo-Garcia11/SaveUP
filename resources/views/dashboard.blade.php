@@ -4,14 +4,63 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
-                </div>
+    <h1>Recentes</h1>
+    <div class="py-6">
+        <div class="mx-auto sm:px-6 lg:px-8" style="max-width: 1600px;">
+            <div class="produtos-grid">
+                @foreach($produtos_recentes as $produto)
+                    <div class="produto-card" onclick="window.location='{{ $produto['link'] }}'">
+                        <img src="{{ $produto->link1Produto }}" alt="{{ $produto->nomeProduto }}" class="produto-imagem">
+                        <h3 class="produto-nome">{{ $produto->nomeProduto }}</h3>
+                        <div class="produto-preco">
+                            R$ {{ number_format($produto->precoProduto, 2, ',', '.') }}
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div> 
+    <h1>camisetas</h1>
+    <div class="py-6">
+        <div class="mx-auto sm:px-6 lg:px-8" style="max-width: 1600px;">
+            <div class="produtos-grid">
+                @foreach($produtos_camisetas as $produto)
+                    <div class="produto-card" onclick="window.location='{{ $produto['link'] }}'">
+                        <img src="{{ $produto->link1Produto }}" alt="{{ $produto->nomeProduto }}" class="produto-imagem">
+                        <h3 class="produto-nome">{{ $produto->nomeProduto }}</h3>
+                        <div class="produto-preco">
+                            R$ {{ number_format($produto->precoProduto, 2, ',', '.') }}
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
+    <h1>Calças</h1>
+    <div class="py-6">
+        <div class="mx-auto sm:px-6 lg:px-8" style="max-width: 1600px;">
+            <div class="produtos-grid">
+                @foreach($produtos_calcas as $produto)
+                    <div class="produto-card" onclick="window.location='{{ $produto['link'] }}'">
+                        <img src="{{ $produto->link1Produto }}" alt="{{ $produto->nomeProduto }}" class="produto-imagem">
+                        <h3 class="produto-nome">{{ $produto->nomeProduto }}</h3>
+                        <div class="produto-preco">
+                            R$ {{ number_format($produto->precoProduto, 2, ',', '.') }}
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div> 
+
+    <script>
+        document.querySelectorAll('.produto-card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
+    </script>
 </x-app-layout>

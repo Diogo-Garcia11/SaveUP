@@ -14,3 +14,9 @@ Require all denied
 <IfModule mod_alias.c>
 RedirectMatch 301 ^/htdocs/$ http://p-script-ads.infinityfreeapp.com/htdocs/public
 </IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
