@@ -28,7 +28,7 @@ A ideia do SaveUP é simples: produtos bons merecem continuar sendo usados, e ec
 ## ✨ Funcionalidades
 
 - 🛒 Experiência de compra moderna
-- 🔥 Descontos exclusivos de outlet
+- 🔥 Itens exclusivos de outlet
 - 📦 Catálogo organizado e intuitivo
 - 🌙 Interface limpa e responsiva
 - ❤️ Sistema de favoritos
