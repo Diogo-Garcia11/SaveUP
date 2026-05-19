@@ -36,10 +36,8 @@ A ideia do SaveUP é simples: produtos bons merecem continuar sendo usados, e ec
 
 ---
 
-# 🖼️ Como é o site?
+# 🖼️ Visuais do site
 
-> Prints do site
+> Produtos no site:
 
-```bash
-/assets/home-preview.png
-/assets/produto-preview.png
+![Imagem](./produtomax.png)
