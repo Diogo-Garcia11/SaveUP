@@ -28,5 +28,17 @@ class ProdutoController extends Controller
             'produtos_calcas'
         ));
     }
+
+    public function buscar(Request $request)
+    {
+    $busca = $request->busca;
+
+    $produtos = Produto::where('nomeProduto', 'like', '%' . $busca . '%')
+        ->latest()
+        ->take(8)
+        ->get();
+
+    return view('buscar', compact('produtos', 'busca'));
+    }
     
 }

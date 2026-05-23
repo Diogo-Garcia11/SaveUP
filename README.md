@@ -40,4 +40,4 @@ A ideia do SaveUP é simples: produtos bons merecem continuar sendo usados, e ec
 
 > Produtos no site:
 
-![Imagem](./produtomax.png)
+![Imagem](./public/imagem/produtomax.png)

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Save Up</title>
+        <title>SaveUP</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,7 +69,7 @@
 
                     @if (Route::has('login'))
                         @auth
-                            <a href="{{ url('/dashboard') }}" class="font-medium hover:text-[#f28e52] transition">Dashboard</a>
+                            <a href="{{ url('/dashboard') }}" class="font-medium hover:text-[#f28e52] transition">Loja</a>
                         @else
                             <a href="{{ route('login') }}" class="font-medium hover:text-[#f28e52] transition">Login</a>
                             @if (Route::has('register'))
@@ -223,16 +223,6 @@
         </section>
 
         <!-- Footer -->
-        <footer class="w-full bg-[#1a1a2e] py-10 px-16">
-            <div class="max-w-7xl mx-auto flex flex-col items-center text-center gap-2">
-                <div class="flex items-center gap-1 text-white font-semibold text-lg mb-1">
-                    <span class="text-[#f28e52] text-xl"><img src="{{ asset('images/logobrecho.png') }}" alt="Logo Save Up" class="h-10 w-auto object-contain"></span>
-                    Save Up
-                </div>
-                <p class="text-gray-400 text-sm">Moda sustentável, estilo atemporal</p>
-                <p class="text-gray-600 text-xs mt-2">© 2026 Save Up. All rights reserved.</p>
-            </div>
-        </footer>
-
+        <x-footer />
     </body>
 </html>
