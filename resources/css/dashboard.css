@@ -1,82 +1,74 @@
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 0;
+}
+
+.produto-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.produto-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.produto-imagem {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 0;
+    background-color: #f7fafc;
+    margin-bottom: 0;
+    pointer-events: none;
+}
+
+.produto-nome {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin: 12px 16px 4px;
+    min-height: auto;
+    pointer-events: none;
+}
+
+.produto-preco {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #16a34a;
+    margin: 0 16px 16px;
+    pointer-events: none;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
     .produtos-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 25px;  
-            margin-top: 20px;
-        }
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
-        .produto-card {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 15px;  
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
-        }
+@media (max-width: 768px) {
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
 
-        .produto-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-        }
-
-        .produto-imagem {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 940 / 1128;
-            object-fit: cover;
-            border-radius: 10px;
-            background-color: #f7fafc;
-            margin-bottom: 12px;
-            pointer-events: none;
-        }
-
-        .produto-nome {
-            font-size: 1rem;    
-            font-weight: 600;
-            color: #2d3748;
-            line-height: 1.4;
-            margin: 8px 0 6px;
-            min-height: 44px;
-            pointer-events: none;
-        }
-
-        .produto-preco {
-            font-size: 1.35rem;  
-            font-weight: 700;
-            color: #2c7a4d;
-            margin-top: 8px;
-            pointer-events: none;
-        }
-
-        /* Responsividade */
-        @media (max-width: 1400px) {
-            .produtos-grid {
-                gap: 20px;
-            }
-            .produto-nome { font-size: 0.95rem; }
-            .produto-preco { font-size: 1.2rem; }
-        }
-
-        @media (max-width: 1200px) {
-            .produtos-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .produtos-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 15px;
-            }
-            .produto-card { padding: 12px; }
-            .produto-nome { font-size: 0.9rem; }
-            .produto-preco { font-size: 1.1rem; }
-        }
-
-        @media (max-width: 480px) {
-            .produtos-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+@media (max-width: 480px) {
+    .produtos-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -13,6 +13,10 @@ class ProdutoController extends Controller
             ->take(8)
             ->get();
 
+        $produtos_surpresa = Produto::inRandomOrder()
+            ->take(8)
+            ->get();
+
         $produtos_camisetas = Produto::where('nomeProduto', 'like', '%Camiseta%')
             ->latest()
             ->take(8)
@@ -24,6 +28,7 @@ class ProdutoController extends Controller
             ->get();
         return view('dashboard', compact(
             'produtos_recentes',
+            'produtos_surpresa',
             'produtos_camisetas',
             'produtos_calcas'
         ));

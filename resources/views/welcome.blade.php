@@ -59,7 +59,7 @@
             <div class="max-w-7xl mx-auto px-16 h-20 flex items-center justify-between">
                 <div class="flex items-center gap-2 font-semibold text-2xl text-[#1a1a1a]">
                     <img src="{{ asset('imagem/logo.png') }}" alt="Logo Save Up" class="h-14 w-auto object-contain">
-                    Save Up
+                    SaveUP
                 </div>
 
                 <nav class="flex items-center gap-8 text-sm">
