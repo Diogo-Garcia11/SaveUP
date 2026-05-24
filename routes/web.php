@@ -17,12 +17,7 @@ Route::middleware('auth','verified')->group(function () {
 
     Route::get('/buscar', [ProdutoController::class, 'buscar'])
     ->name('buscar.produtos');
-
-    Route::get('/max', function () {
-    return view('detalhar');
-    })->name('produto.max');
-
-    
+    Route::get('/roupa/{id}', [ProdutoController::class, 'detalhar'])->name('roupa');
 });
 
 require __DIR__.'/auth.php';

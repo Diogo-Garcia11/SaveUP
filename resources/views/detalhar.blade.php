@@ -1,23 +1,20 @@
 <x-app-layout>
-<?php
+@php
+    $product = [
+        "id" => $produto->idProduto,
 
-$product = [
-    "id"          => 1,
+        "name" => $produto->nomeProduto,
 
-    "name"        => "Vintage Hoodie",
+        "price" => $produto->precoProduto,
 
-    "price"       => 189.90,
+        "description" => $produto->descricaoProduto,
 
-    "description" => "Uma peça de arquivo rara em estado excepcional. Garimpada de uma coleção particular, este moletom vintage carrega a confiança discreta de uma era definida pela contenção e pelo artesanato autêntico.",
-
-    "images" => [
-        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200",
-        "https://images.unsplash.com/photo-1503341504253-dff4815485f1?q=80&w=1200",
-        "https://images.unsplash.com/photo-1509942774463-acf339cf87d5?q=80&w=1200"
-    ]
-];
-
-?>
+        "images" => [
+            $produto->link1Produto,
+            $produto->link2Produto
+        ]
+    ];
+@endphp
 
 <head>
 
@@ -33,21 +30,21 @@ $product = [
 
             <div class="thumbnails">
 
-                <?php foreach ($product['images'] as $i => $img): ?>
+            @foreach($product['images'] as $i => $img)
 
-                    <div
-                        class="thumb <?php echo $i === 0 ? 'active' : ''; ?>"
-                        onclick="switchImage(<?php echo $i; ?>)"
+                <div
+                    class="thumb {{ $i === 0 ? 'active' : '' }}"
+                    onclick="switchImage({{ $i }})"
+                >
+
+                    <img
+                        src="{{ $img }}"
+                        alt=""
                     >
 
-                        <img
-                            src="<?php echo htmlspecialchars($img); ?>"
-                            alt=""
-                        >
+                </div>
 
-                    </div>
-
-                <?php endforeach; ?>
+            @endforeach
 
             </div>
 
@@ -56,20 +53,20 @@ $product = [
 
                 <img
                     id="mainImage"
-                    src="<?php echo htmlspecialchars($product['images'][0]); ?>"
+                    src="{{ $product['images'][0] }}"
                     alt=""
                 >
 
                 <div class="dot-indicators">
 
-                    <?php foreach ($product['images'] as $i => $img): ?>
+                    @foreach($product['images'] as $i => $img)
 
                         <div
-                            class="dot <?php echo $i === 0 ? 'active' : ''; ?>"
-                            onclick="switchImage(<?php echo $i; ?>)"
+                            class="dot {{ $i === 0 ? 'active' : '' }}"
+                            onclick="switchImage({{ $i }})"
                         ></div>
 
-                    <?php endforeach; ?>
+                    @endforeach
 
                 </div>
 
@@ -82,15 +79,13 @@ $product = [
 
             <h1 class="product-title">
 
-                <?php
-
-                    $words = explode(' ', htmlspecialchars($product['name']));
+                @php
+                    $words = explode(' ', $produto->nomeProduto);
 
                     $last = array_pop($words);
+                @endphp
 
-                    echo implode(' ', $words) . ' <em>' . $last . '</em>';
-
-                ?>
+                {!! implode(' ', $words) . ' <em>' . $last . '</em>' !!}
 
             </h1>
 
@@ -99,7 +94,7 @@ $product = [
                 <span class="price-current">
 
                     R$
-                    <?php echo number_format($product['price'], 2, ',', '.'); ?>
+                    {{ number_format($produto->precoProduto, 2, ',', '.') }}
 
                 </span>
 
@@ -174,7 +169,7 @@ $product = [
 
             <div class="accordion-content">
 
-                <?php echo htmlspecialchars($product['description']); ?>
+                {{ $produto->descricaoProduto }}
 
             </div>
 
@@ -187,7 +182,7 @@ $product = [
 </main>
 
 <script>
-const images = <?php echo json_encode($product['images']); ?>;
+const images = {{ json_encode([$produto->link1Produto, $produto->link2Produto]) }};
 
 let current = 0;
 

@@ -45,7 +45,7 @@
                 <p style="color: #6b7280; font-size: 0.8rem; margin-bottom: 20px;">Peças adicionadas recentemente</p>
                 <div class="produtos-grid">
                     @foreach($produtos_recentes as $produto)
-                        <div class="produto-card" onclick="window.location='{{ $produto['link'] }}'">
+                        <div class="produto-card" onclick="window.location='{{ route('roupa', $produto->idProduto) }}'">
                             <img src="{{ $produto->link1Produto }}" alt="{{ $produto->nomeProduto }}" class="produto-imagem">
                             <h3 class="produto-nome">{{ $produto->nomeProduto }}</h3>
                             <div class="produto-preco">
@@ -77,7 +77,7 @@
                 <p style="color: #6b7280; font-size: 0.8rem; margin-bottom: 20px;">Peças aleatórias entre nosso catálogo que podem te surpreender</p>
                 <div class="produtos-grid">
                     @foreach($produtos_surpresa as $produto)
-                        <div class="produto-card" onclick="window.location='{{ $produto['link'] }}'">
+                        <div class="produto-card" onclick="window.location='{{ route('roupa', $produto->idProduto) }}'">
                             <img src="{{ $produto->link1Produto }}" alt="{{ $produto->nomeProduto }}" class="produto-imagem">
                             <h3 class="produto-nome">{{ $produto->nomeProduto }}</h3>
                             <div class="produto-preco">
@@ -106,7 +106,7 @@
                 <p style="color: #6b7280; font-size: 0.8rem; margin-bottom: 20px;">Os melhores modelos selecionados</p>
                 <div class="produtos-grid">
                     @foreach($produtos_camisetas as $produto)
-                        <div class="produto-card" onclick="window.location='{{ $produto['link'] }}'">
+                        <div class="produto-card" onclick="window.location='{{ route('roupa', $produto->idProduto) }}'">
                             <img src="{{ $produto->link1Produto }}" alt="{{ $produto->nomeProduto }}" class="produto-imagem">
                             <h3 class="produto-nome">{{ $produto->nomeProduto }}</h3>
                             <div class="produto-preco">
@@ -136,7 +136,7 @@
                 <p style="color: #6b7280; font-size: 0.8rem; margin-bottom: 20px;">Estilo e conforto para o dia a dia</p>
                 <div class="produtos-grid">
                     @foreach($produtos_calcas as $produto)
-                        <div class="produto-card" onclick="window.location='{{ $produto['link'] }}'">
+                        <div class="produto-card" onclick="window.location='{{ route('roupa', $produto->idProduto) }}'">
                             <img src="{{ $produto->link1Produto }}" alt="{{ $produto->nomeProduto }}" class="produto-imagem">
                             <h3 class="produto-nome">{{ $produto->nomeProduto }}</h3>
                             <div class="produto-preco">
