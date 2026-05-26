@@ -1,0 +1,35 @@
+services:
+  app:
+    image: diogopg11/brecho:latest
+    container_name: brecho_app
+    ports:
+      - "8000:8000"
+    volumes: 
+    - ./:/var/www/html
+    environment:
+      - DB_HOST=db
+    networks:
+      - application
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: brecho
+      MYSQL_ROOT_PASSWORD: 1234
+    networks:
+      - application
+    container_name: mysql_db
+
+
+volumes:
+  db_data:
+
+networks:
+  application:
+    driver: bridge

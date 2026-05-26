@@ -1,0 +1,23 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-DeTSpGN7.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/card_produto_max.css": {
+    "file": "assets/card_produto_max-BZ7p2VUk.css",
+    "src": "resources/css/card_produto_max.css",
+    "isEntry": true
+  },
+  "resources/css/dashboard.css": {
+    "file": "assets/dashboard-DCEIA6c0.css",
+    "src": "resources/css/dashboard.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CtlQLQVV.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
