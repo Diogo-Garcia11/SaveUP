@@ -30,6 +30,7 @@ return [
     'register' => 'Registrar',
     'name' => 'Nome',
     'email_address' => 'E-Mail',
+    'email' => 'E-Mail',
     'password' => 'Senha',
     'old_password' => 'Senha antiga',
     'new_password' => 'Nova senha',

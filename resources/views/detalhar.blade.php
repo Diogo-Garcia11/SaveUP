@@ -9,10 +9,10 @@
 
         "description" => $produto->descricaoProduto,
 
-        "images" => [
+        "images" => array_filter([
             $produto->link1Produto,
             $produto->link2Produto
-        ]
+        ])
     ];
 @endphp
 
@@ -173,7 +173,7 @@
 </main>
 
 <script>
-const images = {{ json_encode([$produto->link1Produto, $produto->link2Produto]) }};
+const images = @json($product['images']);
 
 let current = 0;
 
