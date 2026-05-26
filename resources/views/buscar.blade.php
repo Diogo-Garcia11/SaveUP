@@ -10,7 +10,7 @@
     <div class="mx-auto sm:px-6 lg:px-8" style="max-width: 1600px;">
         <div class="produtos-grid">
             @forelse($produtos as $produto)
-                <div class="produto-card" onclick="window.location='{{ $produto['link'] }}'">
+                <div class="produto-card" onclick="window.location='{{ route('roupa', $produto->idProduto) }}'">
                     <img src="{{ $produto->link1Produto }}" alt="{{ $produto->nomeProduto }}" class="produto-imagem">
                     <h3 class="produto-nome">{{ $produto->nomeProduto }}</h3>
                     <div class="produto-preco">R$ {{ number_format($produto->precoProduto, 2, ',', '.') }}</div>
