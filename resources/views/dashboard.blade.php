@@ -93,7 +93,6 @@
             <div style="margin-bottom: 32px;">
                 <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 4px;">
                     <h2 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 600; color: #1a1a1a;">Recentes</h2>
-                    <a href="#" style="color: #f28e52; font-size: 0.85rem; font-weight: 500; text-decoration: none;">Ver Todos →</a>
                 </div>
                 <p style="color: #6b7280; font-size: 0.8rem; margin-bottom: 20px;">Peças adicionadas recentemente</p>
                 <div class="produtos-grid">
