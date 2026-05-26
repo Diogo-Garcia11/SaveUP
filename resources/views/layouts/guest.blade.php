@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title>Save Up — Login</title>
+        <title>SaveUP</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
             <div class="max-w-7xl mx-auto px-16 h-20 flex items-center">
                 <a href="/" class="flex items-center gap-2 font-semibold text-2xl text-[#1a1a1a]">
                     <img src="{{ asset('imagem/logo.png') }}" alt="Logo Save Up" class="h-14 w-auto object-contain">
-                    Save Up
+                    SaveUP
                 </a>
             </div>
         </header>

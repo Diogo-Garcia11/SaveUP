@@ -26,11 +26,28 @@ class ProdutoController extends Controller
             ->latest()
             ->take(8)
             ->get();
+
+        $produtos_casacos = Produto::where(function ($query) {
+                $query->where('nomeProduto', 'like', '%Casaco%')
+                    ->orWhere('nomeProduto', 'like', '%Blusa%')
+                    ->orWhere('nomeProduto', 'like', '%Jaqueta%')
+                    ->orWhere('nomeProduto', 'like', '%Moletom%');
+            })
+            ->latest()
+            ->take(8)
+            ->get();
+
+        $produtos_vestidos = Produto::where('nomeProduto', 'like', '%Vestido%')
+            ->latest()
+            ->take(8)
+            ->get();
         return view('dashboard', compact(
             'produtos_recentes',
             'produtos_surpresa',
             'produtos_camisetas',
-            'produtos_calcas'
+            'produtos_calcas',
+            'produtos_casacos',
+            'produtos_vestidos'
         ));
     }
 
