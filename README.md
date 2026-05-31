@@ -1,43 +1,30 @@
-<div align="center">
+Projeto acadêmico em equipe na FATEC Antônio Russo, o SaveUP!! Desenvolvido na disciplina de Programação em Scripts, com o objetivo de unir sustentabilidade, empregabilidade, criatividade e relevância social.
+A proposta foi criar uma plataforma web que permite que brechós gerenciem e divulguem seus produtos online de forma simples e acessível. Além da vitrine virtual para as roupas, o sistema conta com um painel administrativo completo para gerenciamento de usuários e produtos, facilitando a administração da loja.
 
-# 🛍️ SaveUP - seu outlet e brechó mais clássico
+### Tecnologias empregadas:
 
-### ✨ Ofertas inteligentes. Economia todos os dias sem afetar o estilo.
+O projeto foi desenvolvido utilizando diversas tecnologias amplamente empregadas no mercado, entre elas:
+• **HTML** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html/html-original.svg" width="30"/> <br/>
+• **CSS** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css/css-original.svg" width="30"/> <br/>
+• **JavaScript** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="30"/> <br/>
+• **PHP**  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="30"/> <br/>
+• **Laravel**  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg" width="30"/> <br/>
+• **MySQL**  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="30"/> <br/>
+• **Docker** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="30"/> <br/>
+• **Node.js** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="30"/> <br/>
+• **Vite**<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vite/vite-original.svg" width="30"/> <br/>
+• **Tailwind CSS** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwind/tailwind-original.svg" width="30"/> <br/>
+• **Composer** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/composer/composer-original.svg" width="30"/> <br/>
+• **Backpack for Laravel** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/backpack/backpack-original.svg" width="30"/> <br/>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/status-ativo-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/plataforma-web-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/feito%20com-amor-ff69b4?style=for-the-badge" />
-</p>
+### Segurança:
 
----
+Durante o desenvolvimento, também foram implementadas práticas importantes de segurança para garantir a proteção dos dados e a confiabilidade da aplicação, incluindo:
+• Hash de senhas com Bcrypt
+• Proteção contra SQL Injection com Prepared Statements 
+• Proteção contra ataques CSRF
+• Escape automático contra XSS
+• Middleware de autenticação e verificação de E-mail
+E mais!
 
-</div>
-
-<br>
-
-# 💸 Seu outlet moderno de moda para reformular seu lifestyle.
-
-O **SaveUP** é um outlet moderno criado para dar uma nova vida a produtos incríveis ♻️✨  
-Aqui você encontra roupas estilosas e vários itens do dia a dia por preços acessíveis — tudo com foco em reutilização, economia inteligente e consumo consciente.
-
-A ideia do SaveUP é simples: produtos bons merecem continuar sendo usados, e economizar nunca sai de moda 💚
-
----
-
-## ✨ Funcionalidades
-
-- 🛒 Experiência de compra moderna
-- 🔥 Itens exclusivos de outlet
-- 📦 Catálogo organizado e intuitivo
-- 🌙 Interface limpa e responsiva
-- ❤️ Sistema de favoritos
-- 🔎 Navegação simples entre produtos
-
----
-
-# 🖼️ Visuais do site
-
-> Produtos no site:
-
-![Imagem](./public/imagem/produtomax.png)
+O projeto está hospedado para ser testado agora mesmo em: https://lnkd.in/dS4XYMqD
