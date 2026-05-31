@@ -11,7 +11,7 @@ O projeto foi desenvolvido utilizando diversas tecnologias amplamente empregadas
 • **Laravel**  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg" width="30"/> <br/>
 • **MySQL**  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="30"/> <br/>
 • **Docker** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="30"/> <br/>
-• **Node.js** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="30"/> <br/>
+• **NPM** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg" width="30"/> <br/>
 • **ViteJS**<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" width="30"/> <br/>
 • **TailwindCSS** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" width="30"/> <br/>
 • **Composer** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/composer/composer-original.svg" width="30"/> <br/>
