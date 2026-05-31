@@ -3,19 +3,19 @@ A proposta foi criar uma plataforma web que permite que brechós gerenciem e div
 
 ### Tecnologias empregadas:
 
-O projeto foi desenvolvido utilizando diversas tecnologias amplamente empregadas no mercado, entre elas:
-• **HTML** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html/html-original.svg" width="30"/> <br/>
-• **CSS** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css/css-original.svg" width="30"/> <br/>
+O projeto foi desenvolvido utilizando diversas tecnologias amplamente empregadas no mercado, entre elas: <br/>
+• **HTML** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="30"/> <br/>
+• **CSS** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="30"/> <br/>
 • **JavaScript** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="30"/> <br/>
 • **PHP**  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="30"/> <br/>
 • **Laravel**  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-original.svg" width="30"/> <br/>
 • **MySQL**  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="30"/> <br/>
 • **Docker** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="30"/> <br/>
 • **Node.js** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="30"/> <br/>
-• **Vite**<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vite/vite-original.svg" width="30"/> <br/>
-• **Tailwind CSS** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwind/tailwind-original.svg" width="30"/> <br/>
+• **ViteJS**<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" width="30"/> <br/>
+• **TailwindCSS** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" width="30"/> <br/>
 • **Composer** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/composer/composer-original.svg" width="30"/> <br/>
-• **Backpack for Laravel** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/backpack/backpack-original.svg" width="30"/> <br/>
+• **Backpack for Laravel** <img src="https://avatars.githubusercontent.com/u/15017015?s=200&v=4" width="30"/> <br/>
 
 ### Segurança:
 
